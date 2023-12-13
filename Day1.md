@@ -50,4 +50,21 @@ We setup 2 teams for this Devops culture:
 - Requirements are not fixed.
 - Budget is not fixed.
 - For every release client will give a feedback.
-- For example we have : 100 requirements 
+- For example we have : 100 requirements out of this 30 requirements are on priority which has to be done first - After this 30 requirement => 40 requirements
+- Every release is called as 1 sprint in agile methodology.
+- It is bidirectional in nature.
+- This methodology is currently most used in the tech market.
+- Project development, testing and delivery is very frequent.
+- DevOps is promoting Agile methodology.
+- In DevOps we can achieve CI and CD by using agile methodology.
+
+### DevOps Advantages
+
+- Speed
+- Automation
+- Rapid development
+- Teams colloboration
+- Security
+- Reliabilty
+- Fast Releases
+- Fast delivery
