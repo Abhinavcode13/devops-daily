@@ -16,4 +16,8 @@
 
 ### Creating standalone applications using maven
 
-- mvn archetype:generate -DgroupId=com.yourapp.app -DartifactId=swingapp -DarchetypeArtifactId=maven-archetype-quickstart -Dversion=1.0-SNAPSHOT
+- mvn archetype:generate -DgroupId=com.yourapp.app -DartifactId=swingapp `-DarchetypeArtifactId=maven-archetype-quickstart` -Dversion=1.0-SNAPSHOT
+
+### Creating web applications using maven
+
+- mvn archetype:generate -DgroupId=com.yourapp.app -DartifactId=swingapp `-DarchetypeArtifactId=maven-archetype-webapp` -Dversion=1.0-SNAPSHOT
