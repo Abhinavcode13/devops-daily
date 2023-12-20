@@ -33,6 +33,6 @@
   1. Central Repository
   2. Remote Repository
   3. Local Repository
-- Central repository is maintained by apache organization
-- Every company will maintain their own remote repository
-- Local repository will be created in our system
+- Central repository is maintained by apache organization.
+- Every company will maintain their own remote repository.
+- Local repository will be created in our system.
