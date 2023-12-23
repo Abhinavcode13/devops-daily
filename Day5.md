@@ -11,9 +11,15 @@
 
 ## Maven Goals
 
-- Clean
-- Test
-- Package
-- install
-- Compile
+- `Clean`: It is used to delete target folder in maven
+- `Test`: It is used to execute unit test code of application.
+- `Package`: It is used to generate jar or war file for our application based on packaging type available in pom.xml
+- `Install`: It is used to install project as dependency in maven repository.
+- `Compile`: It is used to compile project source code. Compiled source code will be stored in target folder.
+- Note: Every maven goal is associated with `maven plugin`. when we execute maven goal then respective maven plugin will execute to perform the operation.
+- Target folder is created when we compile the java application which is done using the compile goal.
+- This target folder can be deleted using the `maven clean` command.
+- We can execute multiple maven goals like `maven compile clean`.
+
+
 
