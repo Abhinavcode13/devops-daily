@@ -20,6 +20,4 @@
 - Target folder is created when we compile the java application which is done using the compile goal.
 - This target folder can be deleted using the `maven clean` command.
 - We can execute multiple maven goals like `maven compile clean`.
-
-
-
+- Syntax: `mvn goal-name`
