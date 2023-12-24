@@ -43,6 +43,19 @@
   9. When we do git commit it will generate a commid-id with 40 characters length.
   10. From this commit-id it will display first 7 characters in Github central repository.
  ### Setps to commit Maven project to Github repsitory
+  1. Create Maven project
+  2. Create Github repository
+  3. Note: After creating git repository , it will display set of commands execute it.
+  4. Open Git bash from project folder.
+     1. $ git init
+     2. $ git status
+     3. $ git add .
+     4. $ git commit -m 'commit-message'
+     5. $ git branch -M main
+     6. $ git remote add origin repo-url
+     7. $ git push -u origin master
+     
+     ![image](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/c92270bc-f4c8-4c2d-8a03-9b54f049f3de)
 - `git remote` -
 - `git push` -
 - `git pull` -
