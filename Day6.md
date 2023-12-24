@@ -40,6 +40,9 @@
   6. Commit file to git local epository : $ git commit -m 'commit-message'
   7. Push file from git local repo to git central repo : $ git push
   8. Note: If you are doing git push for first time it will ask for Github credentials.
+  9. When we do git commit it will generate a commid-id with 40 characters length.
+  10. From this commit-id it will display first 7 characters in Github central repository.
+ ### Setps to commit Maven project to Github repsitory
 - `git remote` -
 - `git push` -
 - `git pull` -
