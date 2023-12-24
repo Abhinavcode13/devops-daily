@@ -56,14 +56,3 @@
      7. $ git push -u origin master
      
      ![image](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/c92270bc-f4c8-4c2d-8a03-9b54f049f3de)
-- `git remote` -
-- `git push` -
-- `git pull` -
-- `git restore` -
-- `git fetch` -
-- `git branch` -
-- `git merge` -
-- `git rebase` -
-- `git rm` -
-- `git log` -
-- `git fork` -
