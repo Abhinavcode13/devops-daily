@@ -28,8 +28,18 @@
   5. Note: To commit a file(s), we should add the files to staging area first.
 - `git add` - It is used to add files to staging area
   1. Syntax: $ git add .
-  2. 
-- `git commit` -
+  2. $ git add file-name
+- `git commit` - It is used to commit staged files to git local repository
+  1. Syntax: $ git commit -m 'reason for commit'
+  ### Steps to push code to central repository
+  1. Create a public repo in GitHub : $ git clone 'repo-url'
+  2. Navigate to repository folder
+  3. Create one file in repository folder : $ touch test.java
+  4. Check status of file : $ git status
+  5. Add file to staging area : $ git add .
+  6. Commit file to git local epository : $ git commit -m 'commit-message'
+  7. Push file from git local repo to git central repo : $ git push
+  8. Note: If you are doing git push for first time it will ask for Github credentials.
 - `git remote` -
 - `git push` -
 - `git pull` -
