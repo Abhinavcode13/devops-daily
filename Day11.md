@@ -22,6 +22,9 @@
 6. Webapps: We will keep application war file in this folder
 
 ### Working with Apache Tomcat in Linux
+
+![image](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/1be8e724-ac84-479a-9aab-b801e1a9ce63)
+
 - Login into AWS Management console
 - Create Ec2 instance (Amazon linux AMI)
 - Connect to Ec2 instance using MobaXterm
