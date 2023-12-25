@@ -1,6 +1,9 @@
 ## Steps to create jenkins with git repo + Maven + Tomcat server
 
 - Go to tomcat server folder and configure below users intomcat-users.xml file (In conf folder)
+
+![image](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/84c12e92-0a4f-410b-b6d2-1bdb31e92203)
+
 ```
 1. <role rolename= "manager-gui" />
 2. <user username= "tomcat" password="tomcat" roles="manager-gui" />
@@ -16,7 +19,7 @@
   - Enter some description
   - Don't give anything in 'General' section
   - Go to "Source code management" Tab and " Select "Git"
-  - Don't give anything for Build triggers section.
+  - Don't give anything for Build triggers section. (If given Poll SCM and in schedule as ***** it will build whenever the code is changed.)
   - Enter Project "Git repo url"
   - Add your Github account credentials
   - In build environment select 'Delete workspace before build starts'
@@ -30,4 +33,5 @@
   - Add tomcat server credentials (give the username & pwd which is having manager-script role)
   - Enter tomcat server URL (https://ec2-public-ip:serverport)
   - Click on Apply and Save
--  
+- Click on build now it will execute the pipeline.
+- It will show 'Build Success' if everything is fine.
