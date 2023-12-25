@@ -35,3 +35,5 @@
   - Click on Apply and Save
 - Click on build now it will execute the pipeline.
 - It will show 'Build Success' if everything is fine.
+- So whenver we stop our ec2 instance it gives a new Ip-address,In jenkins job the public ip which we have given will be the previous one due to which jenkin job is failed and shows Build failed.
+- The solution for this to use elastic IP.
