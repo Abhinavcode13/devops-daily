@@ -55,10 +55,10 @@
 - In Manager context.xml file, change <Value> section like below (allow sttribute value changed)
 - In allow set it as ".*" then save it.
 - Add tomcat users in `tomcat/conf/tomact-useers.xml` file like shown below:
-  1. role rolename= "manager-gui"
-  2. user username= "tomcat" password="tomcat" roles="manager-gui"
-  3. role rolename= "admin-gui"
-  4. user username= "admin" password="admin" roles="manager-gui",admin-gui"
+  1. < role rolename= "manager-gui" />
+  2. < user username= "tomcat" password="tomcat" roles="manager-gui" />
+  3. < role rolename= "admin-gui" />
+  4. < user username= "admin" password="admin" roles="manager-gui",admin-gui" />
 - After doing the mentioned changes stop tomcat server
   1. $ cd bin
   2. $ ./shutdown.sh
