@@ -1,11 +1,15 @@
 ## Apache Tomcat Server
 
+![Tomact](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/60449771-86de-4063-a5b5-667553267328)
+
+
 - Apache tomcat is a web server
 - Apache tomcat is used to run Java web applications
 - Apache tomcat is free and open-source
 - Apache tomcat runs on 8080 port by default
 
 ### Working with Apache Tomcat Server
+- Folder structure of Tomcat
 1. Bin: It containes files to start and stop the server
    1. Windows: startup.bat & shutdown.bat
    2. Linux: startup.sh & shutdown.sh
