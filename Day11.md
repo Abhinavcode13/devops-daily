@@ -48,11 +48,36 @@
   1. URL: `https://Ec2-vm-public-ip:8080/`
   2. Note: It should open tomcat server open page
 - By default the host manager is only accessible from a browser running on the same machine as Tomcat. If you wish to modify this restriction, you'll need to edit the Host manger context.xml file.
-- File location: <tomcat>/webapps/manager/META-INF/context.xml , then do vi context.xml
+- File location: `<tomcat>/webapps/manager/META-INF/context.xml` , then do vi context.xml
 - In Manager context.xml file, change <Value> section like below (allow sttribute value changed)
 - In allow set it as ".*" then save it.
-- Add tomcat users in tomcat/conf/tomact-useers.xml file like shown below:
+- Add tomcat users in `tomcat/conf/tomact-useers.xml` file like shown below:
   1. role rolename= "manager-gui"
   2. user username= "tomcat" password="tomcat" roles="manager-gui"
   3. role rolename= "admin-gui"
   4. user username= "admin" password="admin" roles="manager-gui",admin-gui"
+- After doing the mentioned changes stop tomcat server
+  1. $ cd bin
+  2. $ ./shutdown.sh
+- Create a maven application
+- Edit index.jsp file like below (file location: project-folder\src\main\webapp)
+```
+<html>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bold and Red Text</title>
+</head>
+<body>
+    <p><strong style="color: red;">This text is bold and red.</strong></p>
+</body>
+</html>
+```
+- Package maven web application as war file using maven goals.
+  1. mvn clean package
+- Go to tomcat Server Admin Dashboard and click on "Manager App"
+- Select War file to upload and click on 'deploy' button
+- Click on Application path
+- Stop Tomcat server
+- Stop Ec2 instance in AWS
