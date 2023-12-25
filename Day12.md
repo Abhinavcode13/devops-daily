@@ -16,4 +16,23 @@
 6. Deploy the war file into the server
 Note: All the above Build & Deployment Process can be done automatically using jenkins tool.
 
+### Jenkins Installation on AWS ec2 
+- Add jenkins repo to your yum repository
+  1. $ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/jenkins.repo
+- Import a key file from Jenkins-CLI to enable installation from the package
+  1. $ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+- For amazon linux
+  1. sudo amazon-linux-extras install epel
+- Install jenkins
+  1. $ sudo yum install jenkins -y
+- Start and enable jenkins services
+  1. $ sudo systemctl start jenkins
+  2. $ sudo systemctl enable jenkins
+  3. $ sudo systemctl status jenkins
+  4. $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+- Note: Make sure that you have configured 8080 port in Security group inbound rules which is attached to ec2 instance.
+- Access jenkins using the URL: http://public-ip:8080/
+
+
+
 
