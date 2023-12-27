@@ -38,3 +38,10 @@
 ### View Build-pipeline
 - View Build-pipeline (+) icon -> new view (add a name) -> Type (build pipeline view) -> Build pipeline view title (dark-pipeline) -> Upstream/downstream config (select the initial job -> dev job)
 - CLick on apply and save it
+```
+Changing the Jenkins default port number
+  - Go to root directory
+  - Go to /etc/sysconfig
+  - open jenkins file and change jenkins port number
+  - Restart jenkins
+```
