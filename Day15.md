@@ -22,4 +22,31 @@
 - Java is a pre-requisite software
 - 7.6 -> Java 1.8v & 7.8 -> Java 11v
 - Hardware required : 2 GB RAM (t2.medium)
+- Connect to ec2 instance
+- $ sudo su
+- $ yum install wget -yum
+- $ cd /opt
+- $ install java - sudo yum install java1.8.0-openjdk
+- $ check java version - java --version
+- $ yum install wget unzip -y
+- $ sudo su
+- $ wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip
+- $ unzip sonarqube-7.8.zip
+- $ cd conf
+- $ vi sonar.properties
+- $ cd bin
+- $ ls -l
+- $ cd linux-x86-64
+- $ ls -l
+- Note: Sonarqube don't run with root user
+- Create new user
+- $ useradd sonar
+- $ visudo
+- ADD this line - sonar ALL=(ALL) NOPASSWD: ALL
+- Change ownership of sonar folder
+- $ chmod -R 775 /opt/sonarqube-7.8
+- $ su - sonar (switching to sonar user)
+- Goto bin directory and run sonar server
+- Check sonar server status
+- $ sh sonar.sh
 - 
