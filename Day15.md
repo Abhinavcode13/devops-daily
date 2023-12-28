@@ -46,7 +46,8 @@
 - Change ownership of sonar folder
 - $ chmod -R 775 /opt/sonarqube-7.8
 - $ su - sonar (switching to sonar user)
-- Goto bin directory and run sonar server
+- Goto bin directory then go to linux directory and run sonar server
+- $ sh sonar.sh start
 - Check sonar server status
 - $ sh sonar.sh
-- 
+- Enable portnumber in ec2 vm -security group : URL https://public-ip:9000/
