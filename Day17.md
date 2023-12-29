@@ -16,3 +16,13 @@
   3. $ wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
   4. $ tar -xvf apache-maven-3.6.3-bin.tar.gz
 - Install sonar qube scanner plugin in the Jenkins.
+- Manage jenkins -> configure system -> Sonar qube servers -> Add sonar qube server
+  - Name : Sonar-Server-7.8
+  - Server URL : (sonar-server-url)
+  - Add sonar server token
+- Manage Jenkins -> global tools configuration -> SonarQube scanner
+  - Name : Sonar-Scanner-4.7
+  - Select Sonar Version
+  - Save it
+- Create a jenkins pipeline
+
