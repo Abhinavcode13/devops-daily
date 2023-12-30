@@ -51,4 +51,12 @@
     } 
 } 
 ```
+### What is Jenkinsfile?
+- Jenkinsfile is nothing but a simple text file which is used to write the jenkins pipeline and to automate the continuos integration process.
+- Jenkinsfile usually checked in along with the project source code in Git repo. Ideally every application will have its own Jenkinsfile.
 
+### Jenkins file can be written in two ways
+- Scripted pipeline syntax
+- Declarative pipeline syntax
+### What is Jenkins scripted pipeline?
+- Jenkins piepline are traditionally written as scripted pipelines. Ideally the scripted pipeline is stored in Jenkins webUI jenkins file. The end to end scripted is written in Groovy.
