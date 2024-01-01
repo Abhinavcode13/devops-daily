@@ -6,3 +6,4 @@
   - Add email extension server
   - We will add company provided SMTP server details
   - Once SMTP properties added we can configure email notifications as 'Post Build Action' in jenkins job
+  - Then apply on it and save the changes
