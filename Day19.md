@@ -1,4 +1,4 @@
-## Email notifications in jenkins
+## Email notifications in jenkins for automation
 - We can configure email notifications in jenkins
 - We can send send notification to team members after jenkins job execution completed
 - We can need to configure SMTP properties
