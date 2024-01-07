@@ -12,15 +12,40 @@
 - The main components of Ansible are playbooks, configuration management and deployment.
 - Earlier we used to have systemadmin for project who was responsible to manage configurations required for machines manually.
 - If we have 100s of machines then it will be very difficuilt to manage
-- It uses playbooks to automate deploy, manage, build, 
-## Features
+- It uses playbooks to automate deploy, manage, build.
+ 
+### Features
 - Ansible manages machines in an agent-less manner using SHH
 - Built on top of python and hence a lot of python functionlity
 - YAML based playbooks
 - Uses SSH for secure connections
 - Follows push based architecture for sending information
-## How ansible works?
+### Inventory file 
+- Comment begins with '#' character
+- Blank lines are ignore
+- Groups of hosts are delimited by '[header]' elements
+- You can enter hostname oor ip addresses
+- A hostname/ip can be member of multiple groups
+- Ungrouped hosts are specifying before any group headers like below
+- Ansible inventory hosts file is used to list the groups your servers. Its deafult location is /etc/ansible/hosts
+- Note: In inventory file we can mention IP addresses or hostname also.
+### Sample inventory file example
+```
+192.168.122.1 
+192.168.122.2
+192.168.122.3
 
+[webservers]
+192.168.122.1
+#192.168.122.2
+192.168.122.3
+
+[dbserver]
+192.168.122.1
+192.168.122.2
+juggler-db1.com
+juggler-db2.com
+```
 ### Different configuration management tools in Devops
 - Chef and Puppet works based on `PULL` mechanism
 - Ansible works based on `PUSH` mechanism
