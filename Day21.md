@@ -59,3 +59,9 @@ test:
     three.example.com:
 ```
 - Ansible setup is completed
+
+### Update host inventory in ansible server to add host server details to test connection.
+- $ sudo vi /etc/ansible/hosts
+- Connect using username and password
+  1. $ HOST-NODE-IP ansible_user=ansible ansible_password=hello1123
+  2. $ ansible all -m ping
