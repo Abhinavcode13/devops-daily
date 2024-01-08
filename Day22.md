@@ -6,3 +6,8 @@
 - Print date from webservers group : `$ ansible webservers -m shell -a 'date'`
 - Print disk space of all host nodes : `$ ansible all -m shell -a 'du -h'`
 - Check git version in all host nodes : `$ ansible all -m shell -a 'git --version'`
+- Install git in all host nodes : `$ ansible all -m shell -a 'sudo yum install git -v'`
+- To remove any package manager form system : `$ ansible all -m shell -a 'name=httpd state=latest'`
+- To remove any package manager form system : `$ ansible all -m shell -a 'name=httpd state=present'`
+- To remove any package manager form system : `$ ansible all -m shell -a 'name=httpd state=absent'`
+- Note: Present: `Install` , latest: `Update to latest` , absent: `Un-install`
