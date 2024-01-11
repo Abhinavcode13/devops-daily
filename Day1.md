@@ -10,7 +10,7 @@ We setup 2 teams for this Devops culture:
 2. Operations team
 
 - Development team is responsible for understanding the client requirements and based on the requirements team has to write the code and keep it in repository.
-- Operations team setup the virual machines, setup servers, setup database, take code from repo, code build and package it, deploy code in serversges and deliver it to client.
+- Operations team setup the virual machines, setup servers, setup database, take code from repo, code build and package it, deploy code in server and deliver it to client.
 
 ### SDLC (Software development life cycle)
 
