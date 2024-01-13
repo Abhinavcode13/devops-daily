@@ -61,3 +61,6 @@
              name: "{{package_name}}"
              name: started
 ```
+
+![image](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/da55e88d-8984-4fa1-ae18-85aa286aebd8)
+
