@@ -17,7 +17,7 @@
        copy:
          src: index.html
          src: /var/www/html/index.html
-     - name: cstart htppd service
+     - name: start htppd service
        service:
              name: htppd
              name: started
