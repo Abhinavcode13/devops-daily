@@ -11,4 +11,6 @@
 - $ ansible-vault create test.yml - To create ansible vault
 - $ ansible-vault encrypt foo.yml - To Encrypting Unencrypted Files
 - $ ansible-vault decrypt foo.yml - To Decrypting Encrypted Files
-- 
+- $ ansible-vault edit foo.yml - To edit the file
+- $ ansible-vault view foo.yml - To view the file
+- $ ansible-vault rekey foo.yml - To rekey/change the file
