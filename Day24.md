@@ -14,3 +14,6 @@
 - $ ansible-vault edit foo.yml - To edit the file
 - $ ansible-vault view foo.yml - To view the file
 - $ ansible-vault rekey foo.yml - To rekey/change the file
+
+### Tags and handlers
+Ansible tags are another useful feature that can assist you in carrying out specific tasks from the playbook. By default, all tasks in the playbook are executed, but we can control this behaviour with tags and execute only the tasks with the matching tags.
