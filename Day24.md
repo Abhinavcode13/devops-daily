@@ -71,3 +71,20 @@ ansible-playbook <playbook name> --step (It will ask whether to continue the tag
 ```
 
 ![image](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/fab07397-8915-46e6-a537-8b8202a21e42)
+
+### Special Tags
+- There is a special always tag that will always run a task, unless specifically skipped (--skip-tags always)
+
+Example:
+```
+tasks:
+- debug:
+    msg: "Always runs"
+  tags:
+  - always
+
+- debug:
+    msg: "runs when you use tag1"
+  tags:
+  - tag1
+```
