@@ -88,3 +88,4 @@ tasks:
   tags:
   - tag1
 ```
+- Tags are added in the yml file itself.
