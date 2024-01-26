@@ -15,3 +15,4 @@
 - git clone https://github.com/hashicorp/terraform.git
 - cd terraform
 - go install
+- Verify the installation - terraform -help
