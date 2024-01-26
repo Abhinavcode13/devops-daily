@@ -10,3 +10,8 @@
 - Provide immutable infrastructure where configuration changes smoothly
 - Uses easy to understand language, HCL (HashiCorp configuration language)
 - Easily portable to any other provider
+
+### Install Terraform
+- git clone https://github.com/hashicorp/terraform.git
+- cd terraform
+- go install
