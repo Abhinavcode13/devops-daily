@@ -1,4 +1,4 @@
-## Install Terraform in AWS
+## Install Terraform in Red Hat
 - Create 1 ec2 instance initally and IAM user group.
 - Below are the commands to install terraform in RedHat operating system
 - $ sudo yum install -y yum-utils
