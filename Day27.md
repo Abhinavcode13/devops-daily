@@ -65,3 +65,47 @@ resource "aws_instance" "AWSServer"{
     }
 }
 ```
+## Comments in terrafrom script
+- `#` for single line comment
+- `//` also for single line comment
+- `/* & */` for multi line comments
+
+## Host static website using Terraform
+- Make a new folder : $ mkdir test
+- $ cd test
+- $ vi installHttpd.sh
+- Paste the shell file content in installHttpd.sh
+```
+#!/bin/bash
+sudo su
+yum install httpd -y
+ccd /var/www/html
+echo "<html><h1>Welcome to devops-drift repo!!</h1></html>" indeex.html
+service httpd start
+```
+-  $ chmod u+x installHtppd.sh - change user permission
+-  $ vi main.tf
+```
+provider "aws"{
+    region = "ap-south-1"
+    access_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+    secret_key = "eyJhbHbjsakGhmBcjblJBLiIsInR5cCI6IkpXVCJ9iwrFJHrdf"
+}
+resource "aws_instance" "AWSServer"{
+#   count = "${var.instances_count}"
+    ami = "${var.ami}"
+    instance_type = "${var.instance_type}"
+    key_name = "linux"
+    security_groups = ["launch-wizard-1"]
+    user_data = "${file("installHtppd.sh")}"  
+    tags = {
+        Name = "Terraform server - ${count.index}"
+    }
+}
+```
+- Run the following commands :
+- $ terrafrom init
+- $ terraform fmt
+- $ terrafrom validate
+- $ terrafrom plan
+- $ terrafrom apply
