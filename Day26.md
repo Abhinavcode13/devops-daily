@@ -61,3 +61,4 @@ resource "aws_instance" "AWSServer"{
     }
 }
 ```
+- To delete the terraform infrastructure : $ sudo terrafrom destroy
