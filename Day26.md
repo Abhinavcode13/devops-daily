@@ -11,6 +11,7 @@
 - Validate the script : $ terrafrom validate
 - Create execution plan for script : $ terrafrom plan
 - Create infrastructure by running script : $ terraform -auto-approve
+- Apply script : $ terrafrom apply
 ## Terraform Architecture
 
 ![image](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/74a58011-51c4-4478-90d4-b2a1b7813eee)
@@ -41,3 +42,22 @@ resource "aws_instance" "AWSServer"{
 ```
 - Create a file main.tf using $ sudo vim main.tf and paste this script in it.
 - Excute the above mentioned terrafrom commands.
+- To create 'n' number of ec2 instance we have to give a value of count as shown below in the terraform script.
+```
+provider "aws"{
+    region = "ap-south-1"
+    access_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+    secret_key = "eyJhbHbjsakGhmBcjblJBLiIsInR5cCI6IkpXVCJ9iwrFJHrdf"
+}
+
+resource "aws_instance" "AWSServer"{
+    count = "5"
+    ami   = "ami-05c8cca4485f8b138a"
+    instance_type = "t2.micro"
+    key_name = "linux"
+    security_groups = ["launch-wizard-1"]
+    tags = {
+        Name = "REDHAT-EC2-VM1"
+    }
+}
+```
