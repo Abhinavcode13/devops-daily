@@ -20,3 +20,4 @@ resource "aws_s3_bucket" "S3bucketabhinavkumar" {
   }
 }
 ```
+- For more reference to write any script in HCL language : https://registry.terraform.io/providers/hashicorp/aws/latest/docs 
