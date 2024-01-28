@@ -15,3 +15,29 @@
 
 ![image](https://github.com/Abhinavcode13/DevOpsDrift-Daily/assets/126642111/74a58011-51c4-4478-90d4-b2a1b7813eee)
 
+- Terraform architecture mainly consists of the following components:
+
+1) Terraform Core
+2) Providers
+3) State file
+
+- Terrafrom script example (main.tf)
+```
+provider "aws"{
+    region = "ap-south-1"
+    access_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+    secret_key = "eyJhbHbjsakGhmBcjblJBLiIsInR5cCI6IkpXVCJ9iwrFJHrdf"
+}
+
+resource "aws_instance" "AWSServer"{
+    ami = "ami-05c8cca4485f8b138a"
+    instance_type = "t2.micro"
+    key_name = "linux"
+    security_groups = ["launch-wizard-1"]
+    tags = {
+        Name = "REDHAT-EC2-VM1"
+    }
+}
+```
+- Create a file main.tf using $ sudo vim main.tf and paste this script in it.
+- Excute the above mentioned terrafrom commands.
