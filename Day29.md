@@ -49,3 +49,4 @@
 - top - View active processes live with their system usage
 - useradd and usermod - Add new user or change existing users data
 - passwd - Create or update passwords for existing users
+- ls -l - listing all files 
